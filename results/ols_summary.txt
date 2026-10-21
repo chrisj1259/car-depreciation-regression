@@ -1,0 +1,93 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              log_price   R-squared:                       0.577
+Model:                            OLS   Adj. R-squared:                  0.577
+Method:                 Least Squares   F-statistic:                     3233.
+Date:                Wed, 21 Oct 2026   Prob (F-statistic):               0.00
+Time:                        13:14:17   Log-Likelihood:            -1.5517e+05
+No. Observations:              181282   AIC:                         3.105e+05
+Df Residuals:                  181212   BIC:                         3.112e+05
+Df Model:                          69                                         
+Covariance Type:                  HC3                                         
+======================================================================================================================
+                                                         coef    std err          z      P>|z|      [0.025      0.975]
+----------------------------------------------------------------------------------------------------------------------
+Intercept                                             11.7862      0.030    387.076      0.000      11.727      11.846
+C(brand, Treatment('toyota'))[T.acura]                 0.2717      0.028      9.686      0.000       0.217       0.327
+C(brand, Treatment('toyota'))[T.audi]                  0.4616      0.024     19.330      0.000       0.415       0.508
+C(brand, Treatment('toyota'))[T.bmw]                   0.3304      0.018     17.894      0.000       0.294       0.367
+C(brand, Treatment('toyota'))[T.buick]                 0.0022      0.023      0.096      0.923      -0.043       0.047
+C(brand, Treatment('toyota'))[T.cadillac]              0.3983      0.025     15.956      0.000       0.349       0.447
+C(brand, Treatment('toyota'))[T.chevrolet]            -0.0612      0.013     -4.647      0.000      -0.087      -0.035
+C(brand, Treatment('toyota'))[T.chrysler]              0.0546      0.023      2.410      0.016       0.010       0.099
+C(brand, Treatment('toyota'))[T.dodge]                 0.0563      0.019      2.918      0.004       0.018       0.094
+C(brand, Treatment('toyota'))[T.ford]                  0.0381      0.012      3.169      0.002       0.015       0.062
+C(brand, Treatment('toyota'))[T.gmc]                   0.2193      0.019     11.268      0.000       0.181       0.257
+C(brand, Treatment('toyota'))[T.honda]                 0.0726      0.014      5.065      0.000       0.044       0.101
+C(brand, Treatment('toyota'))[T.hyundai]              -0.0973      0.016     -6.183      0.000      -0.128      -0.066
+C(brand, Treatment('toyota'))[T.infiniti]              0.3678      0.026     14.388      0.000       0.318       0.418
+C(brand, Treatment('toyota'))[T.jeep]                  0.0514      0.016      3.227      0.001       0.020       0.083
+C(brand, Treatment('toyota'))[T.kia]                  -0.1456      0.017     -8.382      0.000      -0.180      -0.112
+C(brand, Treatment('toyota'))[T.lexus]                 0.3976      0.023     17.300      0.000       0.353       0.443
+C(brand, Treatment('toyota'))[T.lincoln]               0.2427      0.023     10.397      0.000       0.197       0.288
+C(brand, Treatment('toyota'))[T.mazda]                -0.1429      0.024     -5.881      0.000      -0.191      -0.095
+C(brand, Treatment('toyota'))[T.mercedes-benz]         0.4296      0.021     20.527      0.000       0.389       0.471
+C(brand, Treatment('toyota'))[T.mini]                  0.0706      0.025      2.782      0.005       0.021       0.120
+C(brand, Treatment('toyota'))[T.mitsubishi]           -0.4639      0.031    -14.744      0.000      -0.526      -0.402
+C(brand, Treatment('toyota'))[T.nissan]               -0.1992      0.014    -14.047      0.000      -0.227      -0.171
+C(brand, Treatment('toyota'))[T.pontiac]              -1.1782      0.104    -11.371      0.000      -1.381      -0.975
+C(brand, Treatment('toyota'))[T.ram]                   0.1296      0.019      6.747      0.000       0.092       0.167
+C(brand, Treatment('toyota'))[T.subaru]                0.0884      0.016      5.536      0.000       0.057       0.120
+C(brand, Treatment('toyota'))[T.volkswagen]           -0.1196      0.021     -5.750      0.000      -0.160      -0.079
+C(brand, Treatment('toyota'))[T.volvo]                 0.2284      0.048      4.784      0.000       0.135       0.322
+C(type)[T.bus]                                         0.3253      0.040      8.101      0.000       0.247       0.404
+C(type)[T.convertible]                                 0.4158      0.012     36.004      0.000       0.393       0.438
+C(type)[T.coupe]                                       0.1315      0.009     15.000      0.000       0.114       0.149
+C(type)[T.hatchback]                                  -0.2646      0.006    -42.053      0.000      -0.277      -0.252
+C(type)[T.mini-van]                                   -0.1692      0.010    -17.128      0.000      -0.189      -0.150
+C(type)[T.offroad]                                     0.5094      0.030     17.052      0.000       0.451       0.568
+C(type)[T.other]                                       0.1584      0.008     20.582      0.000       0.143       0.173
+C(type)[T.pickup]                                      0.4600      0.006     81.520      0.000       0.449       0.471
+C(type)[T.sedan]                                      -0.2436      0.004    -64.484      0.000      -0.251      -0.236
+C(type)[T.truck]                                       0.4402      0.007     65.446      0.000       0.427       0.453
+C(type)[T.unknown]                                    -0.0519      0.004    -11.997      0.000      -0.060      -0.043
+C(type)[T.van]                                         0.0593      0.009      6.702      0.000       0.042       0.077
+C(type)[T.wagon]                                      -0.0461      0.007     -6.478      0.000      -0.060      -0.032
+age                                                   -0.0817      0.001    -93.335      0.000      -0.083      -0.080
+C(brand, Treatment('toyota'))[T.acura]:age            -0.0232      0.003     -9.159      0.000      -0.028      -0.018
+C(brand, Treatment('toyota'))[T.audi]:age             -0.0353      0.003    -13.773      0.000      -0.040      -0.030
+C(brand, Treatment('toyota'))[T.bmw]:age              -0.0190      0.002    -10.807      0.000      -0.022      -0.016
+C(brand, Treatment('toyota'))[T.buick]:age            -0.0205      0.002     -9.790      0.000      -0.025      -0.016
+C(brand, Treatment('toyota'))[T.cadillac]:age         -0.0257      0.002    -11.634      0.000      -0.030      -0.021
+C(brand, Treatment('toyota'))[T.chevrolet]:age         0.0017      0.001      1.457      0.145      -0.001       0.004
+C(brand, Treatment('toyota'))[T.chrysler]:age         -0.0362      0.002    -17.068      0.000      -0.040      -0.032
+C(brand, Treatment('toyota'))[T.dodge]:age            -0.0280      0.002    -14.754      0.000      -0.032      -0.024
+C(brand, Treatment('toyota'))[T.ford]:age             -0.0034      0.001     -3.147      0.002      -0.006      -0.001
+C(brand, Treatment('toyota'))[T.gmc]:age              -0.0069      0.002     -4.095      0.000      -0.010      -0.004
+C(brand, Treatment('toyota'))[T.honda]:age            -0.0218      0.001    -17.825      0.000      -0.024      -0.019
+C(brand, Treatment('toyota'))[T.hyundai]:age          -0.0296      0.002    -17.643      0.000      -0.033      -0.026
+C(brand, Treatment('toyota'))[T.infiniti]:age         -0.0260      0.002    -10.662      0.000      -0.031      -0.021
+C(brand, Treatment('toyota'))[T.jeep]:age              0.0040      0.001      2.704      0.007       0.001       0.007
+C(brand, Treatment('toyota'))[T.kia]:age              -0.0308      0.002    -15.529      0.000      -0.035      -0.027
+C(brand, Treatment('toyota'))[T.lexus]:age            -0.0046      0.002     -2.299      0.022      -0.009      -0.001
+C(brand, Treatment('toyota'))[T.lincoln]:age          -0.0197      0.002     -8.697      0.000      -0.024      -0.015
+C(brand, Treatment('toyota'))[T.mazda]:age            -0.0151      0.002     -6.235      0.000      -0.020      -0.010
+C(brand, Treatment('toyota'))[T.mercedes-benz]:age    -0.0158      0.002     -8.600      0.000      -0.019      -0.012
+C(brand, Treatment('toyota'))[T.mini]:age             -0.0301      0.003    -10.348      0.000      -0.036      -0.024
+C(brand, Treatment('toyota'))[T.mitsubishi]:age        0.0062      0.004      1.680      0.093      -0.001       0.013
+C(brand, Treatment('toyota'))[T.nissan]:age           -0.0122      0.001     -8.753      0.000      -0.015      -0.009
+C(brand, Treatment('toyota'))[T.pontiac]:age           0.0513      0.007      7.369      0.000       0.038       0.065
+C(brand, Treatment('toyota'))[T.ram]:age               0.0095      0.002      5.042      0.000       0.006       0.013
+C(brand, Treatment('toyota'))[T.subaru]:age           -0.0220      0.002    -13.579      0.000      -0.025      -0.019
+C(brand, Treatment('toyota'))[T.volkswagen]:age       -0.0156      0.002     -6.542      0.000      -0.020      -0.011
+C(brand, Treatment('toyota'))[T.volvo]:age            -0.0386      0.004    -10.551      0.000      -0.046      -0.031
+log_odo                                               -0.1431      0.003    -52.512      0.000      -0.148      -0.138
+==============================================================================
+Omnibus:                    73996.457   Durbin-Watson:                   1.947
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           843606.020
+Skew:                          -1.648   Prob(JB):                         0.00
+Kurtosis:                      13.041   Cond. No.                         950.
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC3)

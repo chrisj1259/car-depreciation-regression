@@ -2,7 +2,7 @@
 
 OLS on log(asking price) for 181,282 Craigslist used-car listings (Apr–May 2021), with brand × age interactions and heteroskedasticity-robust (HC3) standard errors.
 
-Data: Kaggle "Craigslist Cars and Trucks Data" (`vehicles.csv`, 426,880 raw rows). Put it at `data/raw/vehicles.csv`; it is not committed.
+Data: [Kaggle "Craigslist Cars and Trucks Data"](https://www.kaggle.com/datasets/austinreese/craigslist-carstrucks-data) (`vehicles.csv`, 426,880 raw rows). Put it at `data/raw/vehicles.csv`; it is not committed.
 
 ## Findings
 
@@ -41,6 +41,7 @@ Every rule and its row count is in [`results/cleaning_log.md`](results/cleaning_
 ## Reproduce
 
 ```bash
+kaggle datasets download austinreese/craigslist-carstrucks-data -p data/raw --unzip
 pip install -r requirements.txt
 python -m src.clean && python -m src.eda && python -m src.model && python -m src.analysis
 python test_clean.py
